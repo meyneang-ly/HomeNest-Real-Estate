@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - HomeNest Real Estate</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Same stylesheet as every other page -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR — PROJECTS 
+     ============================================================ -->
+<header class="navbar-wrap">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <img src="image/image-logo.png" alt="HomeNest logo">
+      <span>HOMENEST REAL ESTATE</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="project.html" class="active">PROJECTS</a></li>
+      <li><a href="career.html">CAREER</a></li>
+      <li><a href="location-contact.html">LOCATION - CONTACT US</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <img src="image/image-hero3.png" alt="HomeNest project aerial view">
+</section>
+
+<!-- ============================================================
+     OUR PROJECT 
+     ============================================================ -->
+<section class="our-project container">
+  <h2>OUR PROJECT<br>THE HOMENEST</h2>
+  <p>
+    The Homenest is the first project developed by Homenest Real Estate nestled along National
+    Road 5. A 300-hectare site in Prek Phnov District in Phnom Penh is undergoing a dramatic
+    metamorphosis that will elevate and enrich people's lives. In the greenest neighborhood of
+    Phnom Penh, nature combines seamlessly with cutting-edge contemporary architecture to
+    create The HomeNest, a sophisticated, exciting, and vibrant new mixed-use destination.
+  </p>
+</section>
+
+<!-- ============================================================
+     PROJECT IMAGE GALLERY — same "peek" carousel style as the
+     homepage promo carousel: big centered slide, sides peek in,
+     every slide the same size, full image never cropped
+     ============================================================ -->
+<section class="project-gallery-section promo-section container">
+  <div class="promo-viewport" id="galleryViewport">
+    <div class="promo-slide"><div class="promo-frame"><img src="image/project-hero1.png" alt="HomeNest project view 1"></div></div>
+    <div class="promo-slide"><div class="promo-frame"><img src="image/project-hero3.png" alt="HomeNest project view 2"></div></div>
+    <div class="promo-slide"><div class="promo-frame"><img src="image/project-hero5.png" alt="HomeNest project view 3"></div></div>
+  </div>
+  <div class="promo-nav">
+    <button type="button" id="galleryPrev" class="promo-btn" aria-label="Previous image">&lt;</button>
+    <div class="promo-dots" id="galleryDots"></div>
+    <button type="button" id="galleryNext" class="promo-btn" aria-label="Next image">&gt;</button>
+  </div>
+</section>
+
+<!-- ============================================================
+     MASTER PLAN — full image, capped to a reasonable width
+     ============================================================ -->
+<section class="masterplan-section container">
+  <img src="image/project-hero6.png" alt="HomeNest master plan">
+  <p>
+    The HomeNest combines highly innovative ideas from national and international experts, as
+    well as adding a features mixed infrastructure with luxury residential homes with a
+    beautiful large garden, in its special purpose of creating sophisticated community living
+    in a multi-faceted development project where family and friends can gather to enjoy rich
+    daily living with feature mixed infrastructure including a central park, garden, fitness
+    clubhouse, wedding hall, and many more luxury facilities along the Prek Taten's Canal for
+    the latest lifestyles.
+  </p>
+</section>
+
+<!-- ============================================================
+     PROMOTION CAROUSEL — identical peek-carousel style/behavior
+     as the one on the Home page
+     ============================================================ -->
+<section class="promo-section container">
+  <div class="promo-viewport" id="promoViewport">
+    <!-- NOTE: same as the homepage — replace these 3 filenames
+         with your 3 real promo banner images -->
+    <div class="promo-slide"><div class="promo-frame"><img src="image/image-promotion.png" alt="Promotion 1"></div></div>
+    <div class="promo-slide"><div class="promo-frame"><img src="image/image-promotion.png" alt="Promotion 2"></div></div>
+    <div class="promo-slide"><div class="promo-frame"><img src="image/image-promotion.png" alt="Promotion 3"></div></div>
+  </div>
+  <div class="promo-nav">
+    <button type="button" id="promoPrev" class="promo-btn" aria-label="Previous slide">&lt;</button>
+    <div class="promo-dots" id="promoDots"></div>
+    <button type="button" id="promoNext" class="promo-btn" aria-label="Next slide">&gt;</button>
+  </div>
+</section>
+
+<!-- ============================================================
+     BUSINESS PARTNERS — same size/markup as the Home page,
+     since both pages share the same .partners-box CSS rule
+     ============================================================ -->
+<section class="partners-section container">
+  <h2 class="partners-title">Business Partners</h2>
+  <div class="partners-box">
+    <img src="image/partner.png" alt="Our business partners">
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — identical to every other page
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <h2 class="footer-heading">GET IN TOUCH</h2>
+    <div class="footer-inner">
+      <div>
+        <h4>Contact Us</h4>
+        <p>123 Anywhere St., Any City, ST 12345</p>
+        <p>(123) 456-7890</p>
+        <p>homenest@realestate.com</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+          <a href="https://t.me/your_telegram_username" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Business Hours</h4>
+        <p>Monday to Friday: 8:00am to 6:00pm</p>
+        <p>Saturday: 9:00am to 5:00pm</p>
+        <p>Sunday: by appointment only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 HomeNest Real Estate. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu toggle
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // ------------------------------------------------------------
+  // PEEK CAROUSEL — shared by the project gallery AND the promo
+  // carousel below it. Center slide is big, sides peek in, and
+  // it's driven by native scroll-snap so it swipes on mobile too.
+  // Same exact behavior as the Home page promo carousel.
+  // ------------------------------------------------------------
+  function initPeekCarousel(viewportId, dotsId, prevId, nextId) {
+    var viewport = document.getElementById(viewportId);
+    if (!viewport) return;
+    var slides = Array.prototype.slice.call(viewport.querySelectorAll('.promo-slide'));
+    var dotsWrap = document.getElementById(dotsId);
+    var total = slides.length;
+    var current = 0;
+    var scrollTimeout = null;
+
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'promo-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.addEventListener('click', function () { goTo(i); });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('.promo-dot'));
+
+    function centerSlide(index, smooth) {
+      var slide = slides[index];
+      var target = slide.offsetLeft - (viewport.clientWidth - slide.offsetWidth) / 2;
+      viewport.scrollTo({ left: target, behavior: smooth ? 'smooth' : 'auto' });
+    }
+
+    function setActive(index) {
+      current = index;
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function goTo(index) {
+      var next = (index + total) % total;
+      setActive(next);
+      centerSlide(next, true);
+    }
+
+    document.getElementById(prevId).addEventListener('click', function () {
+      goTo(current - 1);
+    });
+    document.getElementById(nextId).addEventListener('click', function () {
+      goTo(current + 1);
+    });
+
+    viewport.addEventListener('scroll', function () {
+      if (scrollTimeout) window.cancelAnimationFrame(scrollTimeout);
+      scrollTimeout = window.requestAnimationFrame(function () {
+        var viewportCenter = viewport.scrollLeft + viewport.clientWidth / 2;
+        var closest = 0;
+        var closestDist = Infinity;
+        slides.forEach(function (slide, i) {
+          var slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+          var dist = Math.abs(slideCenter - viewportCenter);
+          if (dist < closestDist) { closestDist = dist; closest = i; }
+        });
+        if (closest !== current) setActive(closest);
+      });
+    }, { passive: true });
+
+    window.addEventListener('resize', function () { centerSlide(current, false); });
+
+    setActive(0);
+    centerSlide(0, false);
+  }
+
+  initPeekCarousel('galleryViewport', 'galleryDots', 'galleryPrev', 'galleryNext');
+  initPeekCarousel('promoViewport', 'promoDots', 'promoPrev', 'promoNext');
+</script>
+
+</body>
+</html>

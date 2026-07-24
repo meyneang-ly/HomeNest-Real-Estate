@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Location & Contact | HomeNest Real Estate</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons: used only for small icons (location/mail/phone/telegram, social links) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Our own stylesheet (same file every page uses) -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR — identical to every other page, active link changed
+     ============================================================ -->
+<header class="navbar-wrap">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <img src="image/image-logo.png" alt="HomeNest logo">
+      <span>HOMENEST REAL ESTATE</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="career.html">CAREER</a></li>
+      <li><a href="location-contact.html" class="active">LOCATION - CONTACT US</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO 
+     ============================================================ -->
+<section class="hero about-hero">
+  <img src="image/socialmmedia-img.png" alt="socialmmedia-img">
+  <div class="about-hero-title">
+    
+  </div>
+</section>
+
+<!-- ============================================================
+     OFFICE LOCATIONS — two cards, same card language as
+     the property cards on the homepage
+     ============================================================ -->
+<section class="office-section container">
+  <div class="office-grid">
+
+    <!-- Head Office -->
+    <article class="office-card">
+      <div class="office-image">
+        <img src="image/image-headoffice.png" alt="HomeNest Head Office building">
+      </div>
+      <h2 class="office-title">Head Office</h2>
+      <p class="office-address">
+        Building No.33, Address: 107, Phoum 4 ANZ Road Sangkat Boeung, Phnom Penh 120408, Cambodia.
+      </p>
+      <a class="link-arrow"
+         href="https://www.google.com/maps/search/?api=1&query=IT+STEP+Academy+Phnom+Penh"
+         target="_blank" rel="noopener noreferrer">Get Direction &rarr;</a>
+
+      <p class="office-contact">
+        <i class="bi bi-envelope"></i><a href="mailto:homenest@realestate.com">homenest@realestate.com</a><br>
+        <i class="bi bi-telephone"></i><a href="tel:+855123456790">(123) 456-7890</a><br>
+        <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+        <i class="bi bi-telegram"></i><a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </p>
+    </article>
+
+    <!-- Sale Gallery -->
+    <article class="office-card">
+      <div class="office-image">
+        <img src="image/image-salegallery.png" alt="Sale Gallery The HomeNest building">
+      </div>
+      <h2 class="office-title">Sale Gallery The HomeNest</h2>
+      <p class="office-address">
+        Krous Village, Sangkat Samraong, Preak Phnov District Phnom Penh, Cambodia.
+      </p>
+      <a class="link-arrow"
+         href="https://www.google.com/maps/search/?api=1&query=IT+STEP+Academy+Phnom+Penh"
+         target="_blank" rel="noopener noreferrer">Get Direction &rarr;</a>
+
+      <p class="office-contact">
+        <i class="bi bi-envelope"></i><a href="mailto:homenest@realestate.com">homenest@realestate.com</a><br>
+        <i class="bi bi-telephone"></i><a href="tel:+855123456790">(123) 456-7890</a><br>
+        <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+        <i class="bi bi-telegram"></i><a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     GET IN TOUCH WITH US — contact form
+     ============================================================ -->
+<section class="contact-section container">
+  <h2 class="section-heading">GET IN TOUCH WITH US</h2>
+
+  <form id="contactForm" class="contact-form" novalidate>
+
+    <div class="form-field" id="nameField">
+      <label for="name">Your name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+      <span class="field-error" id="nameError" role="alert"></span>
+    </div>
+
+    <div class="form-field" id="emailField">
+      <label for="email">Email <span class="required">*</span></label>
+      <input type="email" id="email" name="email" placeholder="Email address" autocomplete="email">
+      <span class="field-error" id="emailError" role="alert"></span>
+    </div>
+
+    <div class="form-field" id="phoneField">
+      <label for="phone">Phone Number <span class="required">*</span></label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone number" autocomplete="tel">
+      <span class="field-error" id="phoneError" role="alert"></span>
+    </div>
+
+    <div class="form-field" id="messageField">
+      <label for="message">Your message <span class="required">*</span></label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+      <span class="field-error" id="messageError" role="alert"></span>
+    </div>
+
+    <button type="submit" class="btn-green submit-btn" id="sendBtn">
+      <span class="btn-label">Send</span>
+      <span class="btn-spinner" aria-hidden="true"></span>
+    </button>
+  </form>
+
+  <div class="form-toast" id="successToast" role="status" aria-live="polite">
+    Your message has been sent. We'll get back to you soon!
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — identical to every other page
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <h2 class="footer-heading">GET IN TOUCH</h2>
+    <div class="footer-inner">
+      <div>
+        <h4>Contact Us</h4>
+        <p>123 Anywhere St., Any City, ST 12345</p>
+        <p>(123) 456-7890</p>
+        <p>homenest@realestate.com</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+          <a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Business Hours</h4>
+        <p>Monday to Friday: 8:00am to 6:00pm</p>
+        <p>Saturday: 9:00am to 5:00pm</p>
+        <p>Sunday: by appointment only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 HomeNest Real Estate. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu toggle (same behavior as every other page)
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  /* ================================================================
+     CONTACT FORM — validation + submission
+
+     ---------------------------------------------------------------
+     ⚙️  THINGS TO REPLACE WITH YOUR REAL INFO
+     ---------------------------------------------------------------
+     1) TELEGRAM — search this file for "your_telegram_username"
+        (two spots: office cards + footer) and swap in your real
+        Telegram handle, e.g. https://t.me/homenest_official
+
+     2) GET DIRECTION — both links open Google Maps at
+        "IT STEP Academy Phnom Penh" as requested. To change the
+        pin, edit the text after "query=" in each href, e.g.
+        https://www.google.com/maps/search/?api=1&query=YOUR+PLACE
+
+     3) FORM SUBMISSION — this validates the form and shows a
+        success message, but there's no backend on a static HTML
+        site, so it does not actually email you yet. To make it
+        really send messages, pick one:
+          a) Formspree (easiest): https://formspree.io — get a
+             form endpoint and swap the fetch URL in submitForm().
+          b) EmailJS: https://www.emailjs.com — sends from the
+             browser directly, no server needed.
+          c) Your own backend endpoint.
+        The spot to edit is marked "SUBMISSION LOGIC" below.
+     ---------------------------------------------------------------
+  */
+  (function () {
+    var form = document.getElementById('contactForm');
+    var sendBtn = document.getElementById('sendBtn');
+    var toast = document.getElementById('successToast');
+
+    var fields = {
+      name: {
+        input: document.getElementById('name'),
+        wrap: document.getElementById('nameField'),
+        error: document.getElementById('nameError'),
+        validate: function (v) {
+          if (!v) return 'Please enter your name.';
+          if (v.length < 2) return 'Name must be at least 2 characters.';
+          return '';
+        }
+      },
+      email: {
+        input: document.getElementById('email'),
+        wrap: document.getElementById('emailField'),
+        error: document.getElementById('emailError'),
+        validate: function (v) {
+          if (!v) return 'Please enter your email.';
+          var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!re.test(v)) return 'Please enter a valid email address.';
+          return '';
+        }
+      },
+      phone: {
+        input: document.getElementById('phone'),
+        wrap: document.getElementById('phoneField'),
+        error: document.getElementById('phoneError'),
+        validate: function (v) {
+          if (!v) return 'Please enter your phone number.';
+          var digits = v.replace(/[^\d]/g, '');
+          if (digits.length < 7 || digits.length > 15) return 'Please enter a valid phone number.';
+          return '';
+        }
+      },
+      message: {
+        input: document.getElementById('message'),
+        wrap: document.getElementById('messageField'),
+        error: document.getElementById('messageError'),
+        validate: function (v) {
+          if (!v) return 'Please enter a message.';
+          if (v.length < 10) return 'Message should be at least 10 characters.';
+          return '';
+        }
+      }
+    };
+
+    function validateField(key) {
+      var f = fields[key];
+      var value = f.input.value.trim();
+      var errorText = f.validate(value);
+      if (errorText) {
+        f.wrap.classList.add('invalid');
+        f.error.textContent = errorText;
+        return false;
+      }
+      f.wrap.classList.remove('invalid');
+      f.error.textContent = '';
+      return true;
+    }
+
+    Object.keys(fields).forEach(function (key) {
+      var f = fields[key];
+      f.input.addEventListener('blur', function () { validateField(key); });
+      f.input.addEventListener('input', function () {
+        if (f.wrap.classList.contains('invalid')) validateField(key);
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      toast.classList.remove('show');
+
+      var allValid = true;
+      Object.keys(fields).forEach(function (key) {
+        if (!validateField(key)) allValid = false;
+      });
+
+      if (!allValid) {
+        var firstInvalid = form.querySelector('.form-field.invalid input, .form-field.invalid textarea');
+        if (firstInvalid) firstInvalid.focus();
+        return;
+      }
+
+      submitForm({
+        name: fields.name.input.value.trim(),
+        email: fields.email.input.value.trim(),
+        phone: fields.phone.input.value.trim(),
+        message: fields.message.input.value.trim()
+      });
+    });
+
+    function submitForm(data) {
+      sendBtn.classList.add('loading');
+      sendBtn.disabled = true;
+
+      /* ------------------- SUBMISSION LOGIC -------------------
+         Demo mode: simulates a request so the button shows a real
+         loading state, then confirms success. Swap this block for
+         a real endpoint when ready, e.g. with Formspree:
+
+         fetch('https://formspree.io/f/YOUR_FORM_ID', {
+           method: 'POST',
+           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+           body: JSON.stringify(data)
+         })
+           .then(function (res) { if (res.ok) onSuccess(); else onError(); })
+           .catch(onError);
+         ---------------------------------------------------------- */
+      setTimeout(function () {
+        console.log('Form data ready to send:', data);
+        onSuccess();
+      }, 900);
+    }
+
+    function onSuccess() {
+      sendBtn.classList.remove('loading');
+      sendBtn.disabled = false;
+      toast.classList.add('show');
+      form.reset();
+      Object.keys(fields).forEach(function (key) {
+        fields[key].wrap.classList.remove('invalid');
+        fields[key].error.textContent = '';
+      });
+      setTimeout(function () { toast.classList.remove('show'); }, 6000);
+    }
+
+    function onError() {
+      sendBtn.classList.remove('loading');
+      sendBtn.disabled = false;
+      alert('Something went wrong sending your message. Please try again.');
+    }
+  })();
+</script>
+
+</body>
+</html>

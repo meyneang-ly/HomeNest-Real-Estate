@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career - HomeNest Real Estate</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Same stylesheet as every other page -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR — CAREER is marked active
+     ============================================================ -->
+<header class="navbar-wrap">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <img src="image/image-logo.png" alt="HomeNest logo">
+      <span>HOMENEST REAL ESTATE</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="career.html" class="active">CAREER</a></li>
+      <li><a href="location-contact.html">LOCATION - CONTACT US</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO — green background, circular building photo, headline
+     (EDIT: image/image-career-hero.png is a placeholder —
+     swap for your own building photo)
+     ============================================================ -->
+<section class="career-hero">
+  <div class="career-hero-circle">
+    <img src="image/image-hirring.jpg" alt="office teamwork">
+  </div>
+  <div class="career-hero-content container">
+    <h1>WE'RE<br>HIRING!</h1>
+    <a href="#careers" class="apply-now-btn">
+      <i class="bi bi-arrow-right-circle"></i> APPLY NOW
+    </a>
+  </div>
+</section>
+<div class="hero-divider"></div>
+
+<!-- ============================================================
+     GROWTH TO GREATNESS — centered intro
+     ============================================================ -->
+<section class="about-intro career-intro container">
+  <h2>GROWTH TO GREATNESS</h2>
+  <p>
+    We do know that from a different location, there is a virous culture; one family, for
+    example, has its own culture, and another family has a different culture, too. Thus,
+    we are just one family here in Orkidē, so we have formed our own cultures.
+  </p>
+  <p>
+    Career Opportunity with Homenest Real Estate Co., Ltd.<br>
+    Grab our golden opportunities to gain exposure to the opening positions below:
+  </p>
+</section>
+
+<!-- ============================================================
+     CAREER OPPORTUNITIES
+     ============================================================ -->
+<div id="careers">
+
+  <!-- ========== JOB 1: job details LEFT, info + form RIGHT ========== -->
+  <section class="job-section container">
+    <div class="job-details">
+      <h3>Site Admin Officer</h3>
+
+      <p class="job-subhead">Responsibilities:</p>
+      <p class="job-group-title">+ Security &amp; HSE Control</p>
+      <ul>
+        <li>Lead security staff on site.</li>
+        <li>Ensure compliance with HSE rules and regulations.</li>
+        <li>Conduct safety checks and risk assessments.</li>
+        <li>Record incidents and support emergency responses.</li>
+      </ul>
+      <p class="job-group-title">+ Gardening &amp; Cleaning Oversight</p>
+      <ul>
+        <li>Lead gardening and landscaping work</li>
+        <li>Manage cleaning staff and cleanliness of all areas.</li>
+        <li>Plan regular and deep cleaning schedules.</li>
+      </ul>
+
+      <p class="job-subhead">Requirements:</p>
+      <ul>
+        <li>Bachelor's degree in Business Administration, Management or related field.</li>
+        <li>At least 1 year of experience in administrative roles.</li>
+        <li>Proficient in Microsoft Office (Excel, Word, Outlook).</li>
+        <li>Strong leadership, communication, and problem-solving abilities.</li>
+        <li>Ability to work independently and under pressure.</li>
+      </ul>
+    </div>
+
+    <div class="job-side">
+      <div class="info-card">
+        <h4>Information</h4>
+        <p><i class="bi bi-calendar"></i> Open Date: Jul 02, 2026</p>
+        <p><i class="bi bi-calendar-check"></i> Close Date: Aug 03, 2026</p>
+        <p><i class="bi bi-person"></i> 1 Position(s)</p>
+        <p><i class="bi bi-briefcase"></i> Career Opportunities</p>
+        <p><i class="bi bi-geo-alt"></i> Site</p>
+        <p><i class="bi bi-whatsapp"></i> 0981234567 / 0891234567 <br><span class="info-sub">jobs@homenestrealestate.com.kh</span></p>
+      </div>
+
+      <div class="application-card">
+        <h4>Application Form</h4>
+        <form class="application-form" id="jobForm1" novalidate>
+          <label for="name1">Full Name *</label>
+          <input type="text" id="name1" name="name" placeholder="Full Name" required>
+          <span class="form-error" id="name1Error"></span>
+
+          <label for="email1">Email *</label>
+          <input type="email" id="email1" name="email" placeholder="Email Address" required>
+          <span class="form-error" id="email1Error"></span>
+
+          <label for="phone1">Phone Number *</label>
+          <input type="tel" id="phone1" name="phone" placeholder="Phone Number" required>
+          <span class="form-error" id="phone1Error"></span>
+
+          <label for="resume1">Upload Resume (.pdf, .doc, .docx – Max 5MB)</label>
+          <input type="file" id="resume1" name="resume" accept=".pdf,.doc,.docx">
+          <span class="form-error" id="resume1Error"></span>
+
+          <p class="form-general-error" id="generalError1"></p>
+
+          <button type="submit" class="btn-green">Submit</button>
+          <p class="form-success" id="success1"><i class="bi bi-check-circle-fill"></i> Your application has been submitted successfully!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOB 2: info + form LEFT, job details RIGHT (alternated) ========== -->
+  <section class="job-section job-section-reverse container">
+    <div class="job-side">
+      <div class="info-card">
+        <h4>Information</h4>
+        <p><i class="bi bi-calendar"></i> Open Date: Jun 30, 2026</p>
+        <p><i class="bi bi-calendar-check"></i> Close Date: July 31, 2026</p>
+        <p><i class="bi bi-person"></i> 1 Position(s)</p>
+        <p><i class="bi bi-briefcase"></i> Career Opportunities</p>
+        <p><i class="bi bi-geo-alt"></i> Site</p>
+        <p><i class="bi bi-whatsapp"></i> 0981234567 / 0891234567 <br><span class="info-sub">jobs@homenestrealestate.com.kh</span></p>
+      </div>
+
+      <div class="application-card">
+        <h4>Application Form</h4>
+        <form class="application-form" id="jobForm2" novalidate>
+          <label for="name2">Full Name *</label>
+          <input type="text" id="name2" name="name" placeholder="Full Name" required>
+          <span class="form-error" id="name2Error"></span>
+
+          <label for="email2">Email *</label>
+          <input type="email" id="email2" name="email" placeholder="Email Address" required>
+          <span class="form-error" id="email2Error"></span>
+
+          <label for="phone2">Phone Number *</label>
+          <input type="tel" id="phone2" name="phone" placeholder="Phone Number" required>
+          <span class="form-error" id="phone2Error"></span>
+
+          <label for="resume2">Upload Resume (.pdf, .doc, .docx – Max 5MB)</label>
+          <input type="file" id="resume2" name="resume" accept=".pdf,.doc,.docx">
+          <span class="form-error" id="resume2Error"></span>
+
+          <p class="form-general-error" id="generalError2"></p>
+
+          <button type="submit" class="btn-green">Submit</button>
+          <p class="form-success" id="success2"><i class="bi bi-check-circle-fill"></i> Your application has been submitted successfully!</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="job-details">
+      <h3>Site Admin Officer</h3>
+
+      <p class="job-subhead">Responsibilities:</p>
+      <p class="job-group-title">+ Pre-Contract</p>
+      <ul>
+        <li>Tender strategy &amp; procurement</li>
+        <li>Budget &amp; BoQ preparation</li>
+        <li>Tender documents</li>
+        <li>Prequalification and tender process</li>
+        <li>Evaluation, clarification and negotiation</li>
+        <li>Contract preparation</li>
+      </ul>
+      <p class="job-group-title">+ Post-Contract</p>
+      <ul>
+        <li>Interim payment certification</li>
+        <li>Variation order management</li>
+        <li>Cost control &amp; reporting</li>
+        <li>Final account</li>
+      </ul>
+      <p class="job-group-title">+ General</p>
+      <ul>
+        <li>Full assistance on documentations/recording and other related matters with staff required by the manager</li>
+        <li>Any other tasks as assigned by the manager.</li>
+      </ul>
+
+      <p class="job-subhead">Requirements:</p>
+      <ul>
+        <li>Degree in Engineering / QS / Construction Management</li>
+        <li>Minimum 3 years of working experience in QS fields</li>
+        <li>Good negotiation &amp; cost control skill</li>
+        <li>Be friendly, flexible, hard-working, and be able to work under the pressure</li>
+        <li>Ability to use Microsoft Office programs including, Word and Excel, Project, Outlook, PPT, Autocad, Sketchup...etc</li>
+        <li>Ability to handle multiple tasks and coordinate work crews concurrently.</li>
+        <li>Ability to communicate well in written and verbal Khmer and English.</li>
+        <li>Good morale and integrity.</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============================================================
+     JOIN US CALLOUT
+     ============================================================ -->
+<section class="join-us">
+  <div class="container">
+    <h2>JOIN OUR TEAM</h2>
+    <p>
+      We're always looking for passionate, driven people to grow with us. If you don't
+      see a role that fits right now, send us your resume anyway — we'd love to hear
+      from you when the right opportunity comes up.
+    </p>
+    <a href="#careers" class="apply-now-btn apply-now-btn-dark">
+      <i class="bi bi-arrow-right-circle"></i> VIEW OPEN POSITIONS
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY WORK WITH US
+     ============================================================ -->
+<section class="why-us container">
+  <h2 class="section-heading">WHY WORK WITH US</h2>
+  <div class="why-us-grid">
+    <div class="why-card">
+      <i class="bi bi-graph-up-arrow"></i>
+      <h4>Career Growth</h4>
+      <p>Clear paths for advancement, with regular reviews and real opportunities to move up.</p>
+    </div>
+    <div class="why-card">
+      <i class="bi bi-mortarboard"></i>
+      <h4>Professional Development</h4>
+      <p>Training, mentorship, and support to help you build the skills you need to succeed.</p>
+    </div>
+    <div class="why-card">
+      <i class="bi bi-people"></i>
+      <h4>Team Collaboration</h4>
+      <p>A close-knit, supportive team culture where every voice is heard and valued.</p>
+    </div>
+    <div class="why-card">
+      <i class="bi bi-lightbulb"></i>
+      <h4>Learning Opportunities</h4>
+      <p>Hands-on experience across real projects, with room to learn and take on new challenges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — identical to every other page
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <h2 class="footer-heading">GET IN TOUCH</h2>
+    <div class="footer-inner">
+      <div>
+        <h4>Contact Us</h4>
+        <p>123 Anywhere St., Any City, ST 12345</p>
+        <p>(123) 456-7890</p>
+        <p>homenest@realestate.com</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                    <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+          <a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+
+        </div>
+      </div>
+      <div>
+        <h4>Business Hours</h4>
+        <p>Monday to Friday: 8:00am to 6:00pm</p>
+        <p>Saturday: 9:00am to 5:00pm</p>
+        <p>Sunday: by appointment only</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 HomeNest Real Estate. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu toggle
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // ---------------------------------------------------------
+  // APPLICATION FORM VALIDATION
+  // Applies the same validation + submit behavior to every
+  // .application-form on the page (both job postings).
+  // ---------------------------------------------------------
+  var MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+  var ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx'];
+
+  document.querySelectorAll('.application-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var isValid = true;
+      var nameInput = form.querySelector('input[name="name"]');
+      var emailInput = form.querySelector('input[name="email"]');
+      var phoneInput = form.querySelector('input[name="phone"]');
+      var resumeInput = form.querySelector('input[name="resume"]');
+
+      var nameError = form.querySelector('#' + nameInput.id + 'Error');
+      var emailError = form.querySelector('#' + emailInput.id + 'Error');
+      var phoneError = form.querySelector('#' + phoneInput.id + 'Error');
+      var resumeError = form.querySelector('#' + resumeInput.id + 'Error');
+      var generalError = form.querySelector('.form-general-error');
+      var successMsg = form.querySelector('.form-success');
+
+      // reset previous messages
+      [nameError, emailError, phoneError, resumeError].forEach(function (el) {
+        el.textContent = '';
+      });
+      generalError.textContent = '';
+      successMsg.classList.remove('show');
+
+      // Full Name
+      if (nameInput.value.trim() === '') {
+        nameError.textContent = 'Please enter your full name.';
+        isValid = false;
+      }
+
+      // Email
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailInput.value.trim() === '') {
+        emailError.textContent = 'Please enter your email address.';
+        isValid = false;
+      } else if (!emailPattern.test(emailInput.value.trim())) {
+        emailError.textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+
+      // Phone
+      var phonePattern = /^[0-9+\-\s()]{7,}$/;
+      if (phoneInput.value.trim() === '') {
+        phoneError.textContent = 'Please enter your phone number.';
+        isValid = false;
+      } else if (!phonePattern.test(phoneInput.value.trim())) {
+        phoneError.textContent = 'Please enter a valid phone number.';
+        isValid = false;
+      }
+
+      // Resume (optional field, but if provided must be valid)
+      if (resumeInput.files.length > 0) {
+        var file = resumeInput.files[0];
+        var ext = file.name.split('.').pop().toLowerCase();
+
+        if (ALLOWED_EXTENSIONS.indexOf(ext) === -1) {
+          resumeError.textContent = 'Only PDF, DOC, or DOCX files are allowed.';
+          isValid = false;
+        } else if (file.size > MAX_FILE_SIZE) {
+          resumeError.textContent = 'File is too large. Maximum size is 5MB.';
+          isValid = false;
+        }
+      }
+
+      // Block submission and show one clear message if anything is missing/invalid
+      if (!isValid) {
+        generalError.textContent = 'Please fill in all the required information before submitting.';
+        return;
+      }
+
+      // Everything is valid — let the user know it went through
+      successMsg.classList.add('show');
+      form.reset();
+    });
+  });
+</script>
+
+</body>
+</html>
