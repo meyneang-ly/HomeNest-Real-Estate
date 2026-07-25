@@ -10,13 +10,13 @@
 <!-- Bootstrap Icons: used only for small icons (location/mail/phone/telegram, social links) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<!-- Our own stylesheet (same file every page uses) -->
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- ============================================================
-     NAVBAR — identical to every other page, active link changed
+     NAVBAR 
      ============================================================ -->
 <header class="navbar-wrap">
   <nav class="navbar container">
@@ -45,8 +45,7 @@
 </section>
 
 <!-- ============================================================
-     OFFICE LOCATIONS — two cards, same card language as
-     the property cards on the homepage
+     OFFICE LOCATIONS
      ============================================================ -->
 <section class="office-section container">
   <div class="office-grid">
@@ -67,7 +66,7 @@
       <p class="office-contact">
         <i class="bi bi-envelope"></i><a href="mailto:homenest@realestate.com">homenest@realestate.com</a><br>
         <i class="bi bi-telephone"></i><a href="tel:+855123456790">(123) 456-7890</a><br>
-        <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+        
         <i class="bi bi-telegram"></i><a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer">Telegram</a>
       </p>
     </article>
@@ -88,7 +87,7 @@
       <p class="office-contact">
         <i class="bi bi-envelope"></i><a href="mailto:homenest@realestate.com">homenest@realestate.com</a><br>
         <i class="bi bi-telephone"></i><a href="tel:+855123456790">(123) 456-7890</a><br>
-        <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+        
         <i class="bi bi-telegram"></i><a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer">Telegram</a>
       </p>
     </article>
@@ -140,7 +139,7 @@
 </section>
 
 <!-- ============================================================
-     FOOTER — identical to every other page
+     FOOTER
      ============================================================ -->
 <footer>
   <div class="container">
@@ -155,7 +154,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+          
           <a href="https://t.me/your_telegram_meiineaang" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
         </div>
       </div>
@@ -173,38 +172,12 @@
 </footer>
 
 <script>
-  // mobile menu toggle (same behavior as every other page)
+  // mobile menu toggle
   document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
   });
 
-  /* ================================================================
-     CONTACT FORM — validation + submission
-
-     ---------------------------------------------------------------
-     ⚙️  THINGS TO REPLACE WITH YOUR REAL INFO
-     ---------------------------------------------------------------
-     1) TELEGRAM — search this file for "your_telegram_username"
-        (two spots: office cards + footer) and swap in your real
-        Telegram handle, e.g. https://t.me/homenest_official
-
-     2) GET DIRECTION — both links open Google Maps at
-        "IT STEP Academy Phnom Penh" as requested. To change the
-        pin, edit the text after "query=" in each href, e.g.
-        https://www.google.com/maps/search/?api=1&query=YOUR+PLACE
-
-     3) FORM SUBMISSION — this validates the form and shows a
-        success message, but there's no backend on a static HTML
-        site, so it does not actually email you yet. To make it
-        really send messages, pick one:
-          a) Formspree (easiest): https://formspree.io — get a
-             form endpoint and swap the fetch URL in submitForm().
-          b) EmailJS: https://www.emailjs.com — sends from the
-             browser directly, no server needed.
-          c) Your own backend endpoint.
-        The spot to edit is marked "SUBMISSION LOGIC" below.
-     ---------------------------------------------------------------
-  */
+ 
   (function () {
     var form = document.getElementById('contactForm');
     var sendBtn = document.getElementById('sendBtn');
@@ -304,19 +277,7 @@
       sendBtn.classList.add('loading');
       sendBtn.disabled = true;
 
-      /* ------------------- SUBMISSION LOGIC -------------------
-         Demo mode: simulates a request so the button shows a real
-         loading state, then confirms success. Swap this block for
-         a real endpoint when ready, e.g. with Formspree:
-
-         fetch('https://formspree.io/f/YOUR_FORM_ID', {
-           method: 'POST',
-           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-           body: JSON.stringify(data)
-         })
-           .then(function (res) { if (res.ok) onSuccess(); else onError(); })
-           .catch(onError);
-         ---------------------------------------------------------- */
+    
       setTimeout(function () {
         console.log('Form data ready to send:', data);
         onSuccess();

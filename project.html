@@ -10,7 +10,7 @@
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<!-- Same stylesheet as every other page -->
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,7 +47,7 @@
 <section class="our-project container">
   <h2>OUR PROJECT<br>THE HOMENEST</h2>
   <p>
-    The Homenest is the first project developed by Homenest Real Estate nestled along National
+    The Homenest is the first project developed by HomeNest Real Estate nestled along National
     Road 5. A 300-hectare site in Prek Phnov District in Phnom Penh is undergoing a dramatic
     metamorphosis that will elevate and enrich people's lives. In the greenest neighborhood of
     Phnom Penh, nature combines seamlessly with cutting-edge contemporary architecture to
@@ -56,9 +56,7 @@
 </section>
 
 <!-- ============================================================
-     PROJECT IMAGE GALLERY — same "peek" carousel style as the
-     homepage promo carousel: big centered slide, sides peek in,
-     every slide the same size, full image never cropped
+     PROJECT IMAGE GALLERY
      ============================================================ -->
 <section class="project-gallery-section promo-section container">
   <div class="promo-viewport" id="galleryViewport">
@@ -74,7 +72,7 @@
 </section>
 
 <!-- ============================================================
-     MASTER PLAN — full image, capped to a reasonable width
+     MASTER PLAN 
      ============================================================ -->
 <section class="masterplan-section container">
   <img src="image/project-hero6.png" alt="HomeNest master plan">
@@ -90,8 +88,7 @@
 </section>
 
 <!-- ============================================================
-     PROMOTION CAROUSEL — identical peek-carousel style/behavior
-     as the one on the Home page
+     PROMOTION CAROUSEL
      ============================================================ -->
 <section class="promo-section container">
   <div class="promo-viewport" id="promoViewport">
@@ -109,8 +106,7 @@
 </section>
 
 <!-- ============================================================
-     BUSINESS PARTNERS — same size/markup as the Home page,
-     since both pages share the same .partners-box CSS rule
+     BUSINESS PARTNERS 
      ============================================================ -->
 <section class="partners-section container">
   <h2 class="partners-title">Business Partners</h2>
@@ -120,7 +116,7 @@
 </section>
 
 <!-- ============================================================
-     FOOTER — identical to every other page
+     FOOTER
      ============================================================ -->
 <footer>
   <div class="container">
@@ -135,7 +131,7 @@
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <!-- TELEGRAM SAMPLE LINK — replace "your_telegram_username" with your real handle -->
+          
           <a href="https://t.me/your_telegram_username" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
         </div>
       </div>
@@ -158,12 +154,7 @@
     document.getElementById('navLinks').classList.toggle('open');
   });
 
-  // ------------------------------------------------------------
-  // PEEK CAROUSEL — shared by the project gallery AND the promo
-  // carousel below it. Center slide is big, sides peek in, and
-  // it's driven by native scroll-snap so it swipes on mobile too.
-  // Same exact behavior as the Home page promo carousel.
-  // ------------------------------------------------------------
+  
   function initPeekCarousel(viewportId, dotsId, prevId, nextId) {
     var viewport = document.getElementById(viewportId);
     if (!viewport) return;
