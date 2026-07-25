@@ -1,9 +1,5 @@
 /* =========================================================
-   HOMENEST REAL ESTATE - HOMEPAGE STYLES
-   Brand colors:
-   --cream  : #ECEADA  (page background)
-   --sage   : #C1D0BD  (section backgrounds / cards)
-   --forest : #00492C  (headings, nav, footer, buttons)
+   HOMENEST REAL ESTATE 
    ========================================================= */
 
 :root{
@@ -102,7 +98,7 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   HERO (video background)
+   HERO 
    --------------------------------------------------------- */
 .hero{
   position: relative;
@@ -117,7 +113,7 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   GROWTH TO GREATEST (intro section)
+   GROWTH TO GREATEST 
    --------------------------------------------------------- */
 .intro-section{
   padding: 70px 0;
@@ -162,9 +158,7 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   THE HOMENEST — combined grid section
-   Left column: image on top, text below (2 stacked rows)
-   Right column: ONE image spanning the full height of both
+   THE HOMENEST 
    --------------------------------------------------------- */
 .homenest-section{
   display: grid;
@@ -212,11 +206,7 @@ h1, h2, h3, h4{
   border-radius: 6px;
 }
 
-/* reusable "View More" style arrow link, used in a few sections.
-   Turns green (same as the navbar) on hover/tap, and stays that
-   way briefly on tap for touch devices via :active. The green
-   fill alone is the tap feedback — no browser outline/highlight
-   box on top of it. */
+/* reusable "View More" */
 .link-arrow{
   display: inline-block;
   color: var(--forest);
@@ -391,11 +381,7 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   PROMO CAROUSEL — "peek" carousel: the current slide sits big
-   and centered, the next/previous slides peek in from the sides.
-   Built with native scroll-snap so it swipes on touch too, and
-   the prev/next buttons + dots drive it programmatically.
-   Images use object-fit: contain so nothing is ever cropped.
+   PROMO CAROUSEL 
    --------------------------------------------------------- */
 .promo-section{
   padding: 0 0 70px;
@@ -448,7 +434,7 @@ h1, h2, h3, h4{
   cursor: pointer;
   transition: background-color .2s ease, color .2s ease;
 }
-/* turns green when hovered or tapped/clicked */
+/* turns green when hovered */
 .promo-btn:hover,
 .promo-btn:active{
   background-color: var(--forest);
@@ -960,7 +946,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CEO MESSAGE — opposite layout: text left, image right
+   CEO MESSAGE 
    --------------------------------------------------------- */
 .ceo-section{
   display: flex;
@@ -981,7 +967,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   VISION & MISSION — green background, 2 equal columns
+   VISION & MISSION
    --------------------------------------------------------- */
 .vision-mission{
   background-color: var(--sage);
@@ -1007,7 +993,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CORE VALUE — centered title + description + 3 cards
+   CORE VALUE 
    --------------------------------------------------------- */
 .core-value{
   text-align: center;
@@ -1063,23 +1049,19 @@ footer h2, footer .footer-heading{
    BUSINESS PARTNERS
    --------------------------------------------------------- */
 .partners-section{
-  padding: 20px 0 70px;
+  padding-bottom: 70px;
+  text-align: center;
 }
-.partners-white-box{
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+.partners-title{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
-.partners-logo-grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.partners-logo-grid img{
-  width: 75%;
+.partners-box img{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* ---------------------------------------------------------
@@ -1140,18 +1122,14 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   PROJECT IMAGE GALLERY — uses the exact same "peek" carousel
-   classes as the homepage promo carousel (.promo-viewport /
-   .promo-slide / .promo-frame), so every slide is the same
-   size, nothing is cropped, and it looks identical in style.
+   PROJECT IMAGE GALLERY 
    --------------------------------------------------------- */
 .project-gallery-section{
   padding: 0 0 20px;
 }
 
 /* ---------------------------------------------------------
-   MASTER PLAN — full image, never cropped, but capped to a
-   reasonable width so it doesn't dominate the page
+   MASTER PLAN 
    --------------------------------------------------------- */
 .masterplan-section{
   padding: 40px 0 70px;
@@ -1184,10 +1162,6 @@ footer h2, footer .footer-heading{
    LOCATION & CONTACT PAGE
    ========================================================= */
 
-/* ---------------------------------------------------------
-   OFFICE LOCATIONS — two cards, same visual language as
-   .property-card (rounded image, Fraunces italic title)
-   --------------------------------------------------------- */
 .office-section{
   padding: 70px 0 20px;
 }
@@ -1374,22 +1348,8 @@ footer h2, footer .footer-heading{
 
 /* =========================================================
    CAREER PAGE
-   Note: the hero now uses the same plain .hero class as every
-   other page (full image under the navbar, no overlay text) —
-   the old circular-photo hero / "WE'RE HIRING!" banner and its
-   CSS (.career-hero, .career-hero-circle, .apply-now-btn,
-   .hero-divider) have been removed on purpose. Everything below
-   (job listings, application form, Why Work With Us) is kept
-   exactly as it was.
    ========================================================= */
 
-/* ---------------------------------------------------------
-   GROWTH TO GREATNESS — reuses .about-intro, small tweaks
-   --------------------------------------------------------- */
-/* ---------------------------------------------------------
-   APPLY NOW BUTTON — used by the "VIEW OPEN POSITIONS" button
-   in the Join Us section (the hero no longer uses this)
-   --------------------------------------------------------- */
 .apply-now-btn{
   display: inline-flex;
   align-items: center;
@@ -1428,7 +1388,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CAREER OPPORTUNITIES — alternating 2-column job sections
+   CAREER OPPORTUNITIES
    --------------------------------------------------------- */
 .job-section{
   display: grid;
