@@ -1,5 +1,9 @@
 /* =========================================================
    HOMENEST REAL ESTATE - HOMEPAGE STYLES
+   Brand colors:
+   --cream  : #ECEADA  (page background)
+   --sage   : #C1D0BD  (section backgrounds / cards)
+   --forest : #00492C  (headings, nav, footer, buttons)
    ========================================================= */
 
 :root{
@@ -98,7 +102,7 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   HERO
+   HERO (video background)
    --------------------------------------------------------- */
 .hero{
   position: relative;
@@ -158,7 +162,9 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   THE HOMENEST 
+   THE HOMENEST — combined grid section
+   Left column: image on top, text below (2 stacked rows)
+   Right column: ONE image spanning the full height of both
    --------------------------------------------------------- */
 .homenest-section{
   display: grid;
@@ -206,7 +212,11 @@ h1, h2, h3, h4{
   border-radius: 6px;
 }
 
-/* reusable "View More"  */
+/* reusable "View More" style arrow link, used in a few sections.
+   Turns green (same as the navbar) on hover/tap, and stays that
+   way briefly on tap for touch devices via :active. The green
+   fill alone is the tap feedback — no browser outline/highlight
+   box on top of it. */
 .link-arrow{
   display: inline-block;
   color: var(--forest);
@@ -310,7 +320,8 @@ h1, h2, h3, h4{
 }
 .team-card img{
   width: 100%;
-  height: 400px;
+  aspect-ratio: 2 / 3;
+  height: auto;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 12px;
@@ -379,7 +390,11 @@ h1, h2, h3, h4{
 }
 
 /* ---------------------------------------------------------
-   PROMO CAROUSEL 
+   PROMO CAROUSEL — "peek" carousel: the current slide sits big
+   and centered, the next/previous slides peek in from the sides.
+   Built with native scroll-snap so it swipes on touch too, and
+   the prev/next buttons + dots drive it programmatically.
+   Images use object-fit: contain so nothing is ever cropped.
    --------------------------------------------------------- */
 .promo-section{
   padding: 0 0 70px;
@@ -432,7 +447,7 @@ h1, h2, h3, h4{
   cursor: pointer;
   transition: background-color .2s ease, color .2s ease;
 }
-/* turns green when hovered  */
+/* turns green when hovered or tapped/clicked */
 .promo-btn:hover,
 .promo-btn:active{
   background-color: var(--forest);
@@ -880,7 +895,8 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   GROWTH TO GREATNESS 
+   GROWTH TO GREATNESS — centered intro (different from the
+   homepage's 2-column .intro-section)
    --------------------------------------------------------- */
 .about-intro{
   text-align: center;
@@ -916,7 +932,8 @@ footer h2, footer .footer-heading{
 }
 .chairwoman-image img{
   width: 100%;
-  height: 800px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -941,7 +958,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CEO MESSAGE 
+   CEO MESSAGE — opposite layout: text left, image right
    --------------------------------------------------------- */
 .ceo-section{
   display: flex;
@@ -954,13 +971,14 @@ footer h2, footer .footer-heading{
 }
 .ceo-image img{
   width: 100%;
-  height: 800px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
 /* ---------------------------------------------------------
-   VISION & MISSION 
+   VISION & MISSION — green background, 2 equal columns
    --------------------------------------------------------- */
 .vision-mission{
   background-color: var(--sage);
@@ -986,7 +1004,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CORE VALUE 
+   CORE VALUE — centered title + description + 3 cards
    --------------------------------------------------------- */
 .core-value{
   text-align: center;
@@ -1072,9 +1090,6 @@ footer h2, footer .footer-heading{
   .ceo-section{
     flex-direction: column-reverse;
   }
-  .chairwoman-image img, .ceo-image img{
-    height: 340px;
-  }
   .vision-mission-grid{
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1101,6 +1116,9 @@ footer h2, footer .footer-heading{
    PROJECTS PAGE
    ========================================================= */
 
+/* ---------------------------------------------------------
+   OUR PROJECT 
+   --------------------------------------------------------- */
 .our-project{
   text-align: center;
   max-width: 760px;
@@ -1119,14 +1137,18 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   PROJECT IMAGE GALLERY 
+   PROJECT IMAGE GALLERY — uses the exact same "peek" carousel
+   classes as the homepage promo carousel (.promo-viewport /
+   .promo-slide / .promo-frame), so every slide is the same
+   size, nothing is cropped, and it looks identical in style.
    --------------------------------------------------------- */
 .project-gallery-section{
   padding: 0 0 20px;
 }
 
 /* ---------------------------------------------------------
-   MASTER PLAN 
+   MASTER PLAN — full image, never cropped, but capped to a
+   reasonable width so it doesn't dominate the page
    --------------------------------------------------------- */
 .masterplan-section{
   padding: 40px 0 70px;
@@ -1159,6 +1181,10 @@ footer h2, footer .footer-heading{
    LOCATION & CONTACT PAGE
    ========================================================= */
 
+/* ---------------------------------------------------------
+   OFFICE LOCATIONS — two cards, same visual language as
+   .property-card (rounded image, Fraunces italic title)
+   --------------------------------------------------------- */
 .office-section{
   padding: 70px 0 20px;
 }
@@ -1345,8 +1371,22 @@ footer h2, footer .footer-heading{
 
 /* =========================================================
    CAREER PAGE
+   Note: the hero now uses the same plain .hero class as every
+   other page (full image under the navbar, no overlay text) —
+   the old circular-photo hero / "WE'RE HIRING!" banner and its
+   CSS (.career-hero, .career-hero-circle, .apply-now-btn,
+   .hero-divider) have been removed on purpose. Everything below
+   (job listings, application form, Why Work With Us) is kept
+   exactly as it was.
    ========================================================= */
 
+/* ---------------------------------------------------------
+   GROWTH TO GREATNESS — reuses .about-intro, small tweaks
+   --------------------------------------------------------- */
+/* ---------------------------------------------------------
+   APPLY NOW BUTTON — used by the "VIEW OPEN POSITIONS" button
+   in the Join Us section (the hero no longer uses this)
+   --------------------------------------------------------- */
 .apply-now-btn{
   display: inline-flex;
   align-items: center;
@@ -1385,7 +1425,7 @@ footer h2, footer .footer-heading{
 }
 
 /* ---------------------------------------------------------
-   CAREER OPPORTUNITIES
+   CAREER OPPORTUNITIES — alternating 2-column job sections
    --------------------------------------------------------- */
 .job-section{
   display: grid;
